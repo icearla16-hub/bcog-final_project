@@ -6,3 +6,5 @@ How work will be divided (assigned and tracked) among group members, and;
 How (and how often!) team members will communicate with each other about the project (such as weekly meetings, ongoing group chat, etc.)
 
 hello this is nora
+
+aaaaa
