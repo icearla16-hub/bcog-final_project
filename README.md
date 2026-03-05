@@ -1,4 +1,5 @@
 1. A brief (3-5 sentences) description of your planned project
+
 Our project is along the lines of a personality test (for fun, neither scientific nor pseudoscientific), likely paired with a Turtle or some kind of visual (ideally interactive?) aspect. Basically, a user can maneuver through a Turtle screen and answer questions that guide their path towards an end result. Based on the result they end up at, they're told some conclusion about their personality!
 
 2 a, b, c. For each of three functions, a very brief (1-2 sentences) description of what the function will do.
