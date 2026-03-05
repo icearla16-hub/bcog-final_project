@@ -4,3 +4,5 @@
 4 a & b. If you are doing a group project, very brief statements (1-2 sentences each) describing:
 How work will be divided (assigned and tracked) among group members, and;
 How (and how often!) team members will communicate with each other about the project (such as weekly meetings, ongoing group chat, etc.)
+
+hello this is nora
