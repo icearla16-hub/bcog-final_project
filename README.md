@@ -5,7 +5,7 @@ _You whip your head around, anxiously scanning the trees for whomever just snapp
 
 _—as a bunny. It's casually chewing on a piece of grass, looking so unbothered that you almost feel like it's mocking you. With a sigh of relief, you continue on your way._
 
-You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free—the jewels are enough to pay your debts and establish the life of your dreams. Get caught, however, and the rest of your days become a nightmare. With only your wits to guide you, what will your fate be?
+You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free—the jewels are enough to pay your debts and establish the life of your dreams. Get caught, however, and the rest of your days will become a nightmare. With only your wits to guide you, what will your fate be?
 
 ## What is our project about?
 Our project is a choose-your-own-adventure personality test. Users face situations within the storyline, and their decisions inform the path they take through the forest, culminating in a unique ending that reveals something about their personality.
