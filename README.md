@@ -27,19 +27,19 @@ Establish a class `Display` with the following methods:
 
 Use .csv or .txt files; one file for questions, one for answer options. The answer options will likely be formatted as follows:
 
-    OPTION, a  
-    OPTION, b  
-    OPTION, c  
+    OPTION,a  
+    OPTION,b  
+    OPTION,c  
 
 to allow for easy tallying of the user's responses. If the user chooses mostly a's, they receive end result A, and so on (see below).
 
-- A - Despite the possibility of being harmed, you always choose to help.
-- B - You are a practical person who chooses to help when it does not hurt you, but you won't go out of your way to help.
-- C - You are a focused person, reliant on only your skills to reach your goals.
+  - A - Despite the possibility of being harmed, you always choose to help.
+  - B - You are a practical person who chooses to help when it does not hurt you, but you won't go out of your way to help.
+  - C - You are a focused person, reliant on only your skills to reach your goals.
 
 This will require the following functions:
-- Read the questions file. Display questions one-at-a-time when prompted.
-- Read the answer options file. Display answer options either on or above buttons in the interface frame, but do not indicate a, b, or c (those are just for our organization).
+- read_questions(): Read the questions file. Display questions one-at-a-time when prompted.
+- read_options(): Read the answer options file. Display options either on or above buttons in the interface frame, but do not indicate a, b, or c (those are just for our organization).
 - Add user responses to a .csv or list. Loop through and find the mode, which will determine the final outcome.
 - Display the user's final outcome.
 
