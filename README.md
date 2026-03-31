@@ -1,5 +1,5 @@
 # The Adventures of the Turtle
-You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free---the jewels are enough to pay off your debts and establish the life of your dreams. Get caught, however, and the rest of your days become a nightmare. With only your wits to guide you, what will your fate be?
+You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free—the jewels are enough to pay off your debts and establish the life of your dreams. Get caught, however, and the rest of your days become a nightmare. With only your wits to guide you, what will your fate be?
 
 ## What is our project about?
 
