@@ -14,15 +14,15 @@ Our project is a choose-your-own-adventure personality test. Users face situatio
 Functions will cover three major domains: making the Tkinter display, reading and displaying text from separate files, and interpreting user inputs to shape their ending.
 
 ### 1. Making the Tkinter display
-NOTE: see Lab 7 for reference
-Establish a class `Display` with the following methods):
+NOTE: see Lab 7 for reference  
+Establish a class `Display` with the following methods:
 - \_\_init\_\_(): Creates a Tkinter window. Calls the following methods.
 - init_window(): Initializes window. Accounts for window name, screen size, and frame sizes.
 - create_turtle_frame(): Adds frame that holds a canvas with a Turtle.
 - create_interface_frame(): Adds frame with buttons for user to interact with. Calls functions that will read and display text (questions and answer options).
  
 ### 2. Reading and displaying text from separate files
-NOTE: see Homework 3 for reference
+NOTE: see Homework 3 for reference  
 Use .csv or .txt files; one file for questions, one for answer options. The answer options will likely be formatted as follows:
 
     OPTION, a  
