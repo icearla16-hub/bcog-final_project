@@ -33,7 +33,7 @@ If we want to add complexity, we can make the Turtle's next move dependent on th
 
 Also, the Turtle should have a function to "sense" when it reaches a fork (i.e., when the spaces on either side are not occupied by a blockade) to prompt a question.
 
-### 3. Reading and displaying text from separate files, handling user inputs
+### 3. Reading and displaying text from separate files, organizing user inputs
 > NOTE: Homework 3 may be a helpful reference
 
 Import questions.txt and options.csv. The answer options will be formatted as follows:
@@ -56,7 +56,9 @@ This will require the following functions:
 
 ## Group Members + Github Usernames
 
-Akhila: icearla16-hub, Nora: noralz2, Andrea: andrealo2432
+Akhila: icearla16-hub  
+Nora: noralz2  
+Andrea: andrealo2432
 
 ## How our work is going to be split
 
