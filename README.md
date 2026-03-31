@@ -1,8 +1,9 @@
 # The Adventures of the Turtle
+You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free---the jewels are enough to pay off your debts and establish the life of your dreams. Get caught, however, and the rest of your days become a nightmare. With only your wits to guide you, what will your fate be?
 
 ## What is our project about?
 
-Our project is along the lines of a personality test (for fun, neither scientific nor pseudoscientific), likely paired with a Turtle or some kind of visual (ideally interactive?) aspect. Basically, a user can maneuver through a Turtle screen and answer questions that guide their path towards an end result. Based on the result they end up at, they're told some conclusion about their personality!
+Our project is a choose-your-own-adventure personality test. Users face situations within the storyline, and their decisions inform the path they take through the forest, culminating in a unique ending that reveals something about their personality.
 
 ## Function Descriptions
 
