@@ -11,7 +11,7 @@ You're on the run after stealing the local dictatorship's crown jewels. As the g
 Our project is a choose-your-own-adventure personality test. Users face situations within the storyline, and their decisions inform the path they take through the forest, culminating in a unique ending that reveals something about their personality.
 
 ## Function Descriptions
-Functions will cover three major domains: making the Tkinter display, reading and displaying text from separate files, and interpreting user inputs to shape their ending.
+Functions will cover three major domains: making the Tkinter display, controlling the Turtle within the Tkinter window, and handling files with questions, answer options, and user data. Each of these domains will likely have their own folder within the project directory for modularity.
 
 ### 1. Making the Tkinter display
 > NOTE: Lab 7 may be a helpful reference
@@ -19,10 +19,19 @@ Functions will cover three major domains: making the Tkinter display, reading an
 Establish a class `Display` with the following methods:
 - \_\_init\_\_(): Creates a Tkinter window. Calls the following methods.
 - init_window(): Initializes window. Accounts for window name, screen size, and frame sizes.
-- create_turtle_frame(): Adds frame that holds a canvas with a Turtle.
+- create_turtle_frame(): Adds frame that holds a canvas with a Turtle. Calls functions that control the Turtle.
 - create_interface_frame(): Adds frame with buttons for user to interact with. Calls functions that will read and display text (questions and answer options).
  
-### 2. Reading and displaying text from separate files
+### 2. Controlling the Turtle
+Ideally, the Turtle display will show a maze with trees as blockades. If possible, this will be the Turtle canvas's background. If not, each tree might be a Turtle object itself placed at a particular location. The user's Turtle will start at the bottom center and navigate through the maze. At each fork, the user is given a question and will continue moving after making a response.
+
+If we want to add complexity, we can make the Turtle's next move dependent on the response given. For now, it's easiest if the Turtle is on a fixed path (unbeknownst to the user), but the subsequent questions change depending on the response. Functions will look something like this, but with varying directions:
+       
+    if response:
+      t.right(90)
+      t.forward(10)
+
+### 3. Reading and displaying text from separate files, handling user inputs
 > NOTE: Homework 3 may be a helpful reference
 
 Use .csv or .txt files; one file for questions, one for answer options. The answer options will likely be formatted as follows:
@@ -40,7 +49,7 @@ to allow for easy tallying of the user's responses. If the user chooses mostly a
 This will require the following functions:
 - read_questions(): Read the questions file. Display questions one-at-a-time when prompted.
 - read_options(): Read the answer options file. Display options either on or above buttons in the interface frame, but do not indicate a, b, or c (those are just for our organization).
-- Add user responses to a .csv or list. Loop through and find the mode, which will determine the final outcome.
+- Add user responses to a .csv or list. Loop through and find the mode (maybe 1, 2, 3 is easier than a, b, c?), which will determine the final outcome.
 - Display the user's final outcome.
 
 ## Group Members + Github Usernames
