@@ -21,9 +21,7 @@ C - You are a focused person, reliant on only your skills to reach your goals.
 
 ## Group Members + Github Usernames
 
-  Akhila: icearla16-hub
-  Nora: noralz2
-  Andrea: andrealo2432
+Akhila: icearla16-hub, Nora: noralz2, Andrea: andrealo2432
 
 ## How our work is going to be split
 
