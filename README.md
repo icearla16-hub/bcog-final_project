@@ -31,6 +31,8 @@ If we want to add complexity, we can make the Turtle's next move dependent on th
       t.right(90)
       t.forward(10)
 
+Also, the Turtle should have a function to "sense" when it reaches a fork (i.e., when the spaces on either side are not occupied by a blockade) to prompt a question.
+
 ### 3. Reading and displaying text from separate files, handling user inputs
 > NOTE: Homework 3 may be a helpful reference
 
