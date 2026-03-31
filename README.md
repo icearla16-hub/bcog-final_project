@@ -36,7 +36,7 @@ Also, the Turtle should have a function to "sense" when it reaches a fork (i.e.,
 ### 3. Reading and displaying text from separate files, handling user inputs
 > NOTE: Homework 3 may be a helpful reference
 
-Import questions and answer options, likely in .txt and .csv format, respectively. The answer options will be formatted as follows:
+Import questions.txt and options.csv. The answer options will be formatted as follows:
 
     OPTION,a  
     OPTION,b  
