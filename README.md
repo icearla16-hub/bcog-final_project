@@ -19,6 +19,7 @@ Functions will cover three major domains: making the Tkinter display, controllin
 - `questions.txt` - List of questions
 - `answers.txt` - Stores list of answers from user
 - `counting.py` - Counts the amount of times that the user has chosen each choice (a, b, or c), and gives output of which option the user had chosen the most
+- `the-adventures-of-the-turtle.py` - The display
 
 ### 1. Making the Tkinter display
 > NOTE: Lab 7 may be a helpful reference
