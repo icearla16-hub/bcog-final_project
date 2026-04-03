@@ -1,0 +1,32 @@
+### Questions + Answer Choices
+1. Your first choice is an easy one. It’s based on the tool you want to help yourself throughout the entire game. You will have all the tools with you, but one tool will be chosen primarily to define your adventure.
+    • a: a shield
+    • b: a compass 
+	• c: a knife
+  Each tool can either be used for your benefit or for the benefit of others. 
+2. As you are walking, you see an injured wolf. You have a choice: help even though time is limited, or focus on finding your way back home.
+    • a: you can use your knife to stop their bleeding, and help the wolf recover 
+	• b: you can use your compass to tell them the way to help and leave.
+	• c: you leave the wolf alone because it might attack you, especially because it is injured
+3. Knowing you are running low on food and water, you run into a group of animals offering food and water. However, there is a catch: you have to give up something of yours. will you...
+    • a: give up your knife, knowing that would be your choice of a weapon in the future
+	• b: offer your shield and take their food, knowing that the chances of you using the shield are anyway
+	• c: take their food and run, knowing this is your only chance for sustenance and not facing consequences
+4. Suddenly, there is a rabbit in front of you asking for help. Do you...
+    • a: You can help them and delay your travels
+	• b: assist them with patching up and leave
+	• c: leave knowing the jewels are vital to your debts and dreams
+  The rabbit then informs you that it’s okay if you do not help, as there is more help coming. It’s time to make your choice now.
+5. Unfortunately, there were consequences to your choices, and now you have to make a new one. 
+	•	For a: congratulations, you have already earned some of your jewels back, as this rabbit has gained access to them before. 
+	•	For b: congratulations, though you haven’t earned any of your jewels back, you have earned another tool. a book that would offer you knowledge of the best choice to make in the next interaction. (In the next question, they would know to pick a certain answer; they are told to choose a because the rabbit is in the group and gives them access to the jewels)
+	•	For c: congratulations, you have sped up the time towards your goals, but haven’t earned anything special from your choice. 
+6. You have reached the last obstacle of the forest and have to make an important decision with the town council member. 
+  •	a: the town council member offers a guide through the forest, but you have to take it with other animals, so you know they will slow you down even though it will help them
+	• b: the town council member says you can take the guide alone, but you will have to give up some food for the rest of the people
+	•	c: the town council member says you can take your own version of the guide with the compass you have and arrive faster at your jewels
+  What choice will you make?
+7. You are finally out and have been given your jewels as a reward for leaving the forest, despite your journey, and have a final decision to make. Are you going to...
+  •	a: give them to the people of the village they are rightfully owed to
+	• b: keep half of the jewels and share the other half
+	•	c: keep the jewels for yourself
