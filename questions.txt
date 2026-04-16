@@ -22,11 +22,11 @@
 	•	For b: congratulations, though you haven’t earned any of your jewels back, you have earned another tool. a book that would offer you knowledge of the best choice to make in the next interaction. (In the next question, they would know to pick a certain answer; they are told to choose a because the rabbit is in the group and gives them access to the jewels)
 	•	For c: congratulations, you have sped up the time towards your goals, but haven’t earned anything special from your choice. 
 6. You have reached the last obstacle of the forest and have to make an important decision with the town council member. 
-  •	a: the town council member offers a guide through the forest, but you have to take it with other animals, so you know they will slow you down even though it will help them
-	• b: the town council member says you can take the guide alone, but you will have to give up some food for the rest of the people
-	•	c: the town council member says you can take your own version of the guide with the compass you have and arrive faster at your jewels
+  •	a: The town council member offers a guide through the forest, but you have to take it with other animals, so you know they will slow you down, even though it will help them
+  •	b: The town council member says you can take the guide alone, but you will have to give up some food for the rest of the people
+  •	c: The town council member says you can take your own version of the guide with the compass you have and arrive faster at your jewels
   What choice will you make?
 7. You are finally out and have been given your jewels as a reward for leaving the forest, despite your journey, and have a final decision to make. Are you going to...
-  •	a: give them to the people of the village they are rightfully owed to
-	• b: keep half of the jewels and share the other half
-	•	c: keep the jewels for yourself
+  •	a: give them to the people of the village, they are rightfully owed to
+  • b: keep half of the jewels and share the other half
+  •	c: keep the jewels for yourself
