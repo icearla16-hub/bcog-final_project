@@ -14,7 +14,7 @@ Our project is a choose-your-own-adventure personality test. Users face situatio
 Functions will cover three major domains: making the Tkinter display, controlling the Turtle within the Tkinter window, and handling files with questions, answer options, and user data. Each of these domains will likely have their own folder within the project directory for modularity.
 
 - `survey.py` - Reading in the file for the questions, asking the questions, and saving the input from the user
-- `trtle.py` - The turtle class
+- `the_turtle.py` - The turtle class
 - `instructions.txt` - The instructions that show up for the user prior to the start of the adventure
 - `questions.txt` - List of questions
 - `answers.txt` - Stores list of answers from user
