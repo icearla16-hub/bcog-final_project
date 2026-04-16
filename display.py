@@ -44,3 +44,35 @@ class Display:
 def main():
     my_display = Display()
     my_display.root.mainloop()
+
+if __name__ == "__main__":
+    main()
+
+
+# # Setup
+# screen = turtle.Screen()
+# t = turtle.Turtle()
+
+
+# # Define movement functions
+# def move_left():
+#     t.left(90)
+#     t.forward(10)
+
+
+# def move_right():
+#     t.right(90)
+#     t.forward(10)
+
+
+# def move_forward():
+#     t.forward(10)
+
+
+# # Assign keys to functions
+# screen.onkey(move_left, "Left")  # Press Left arrow to move left
+# screen.onkey(move_right, "Right")  # Press Right arrow to move right
+# screen.onkey(move_forward, "Up")  # Press Up arrow to move forward
+# screen.listen()
+
+# screen.mainloop()
