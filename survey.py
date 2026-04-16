@@ -17,3 +17,4 @@ def ask_question(question):
 
 if __name__ == "__main__":
     main()
+    #answer options to csv and questions from question.text
