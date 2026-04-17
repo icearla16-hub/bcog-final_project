@@ -66,11 +66,12 @@ class Display:
             height=self.turtle_frame_height,
         )
         self.action_canvas.pack()
-        # return self.action_canvas, my_turtle
 
         self.turtle_screen = turtle.TurtleScreen(self.action_canvas)
         self.t = turtle.RawTurtle(self.turtle_screen)
         self.t.setheading(90)
+        self.t.penup()
+        self.t.setpos(0, -0.4 * (self.turtle_frame_height))
 
     def move_left(self):
         self.t.left(90)

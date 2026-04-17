@@ -1,5 +1,6 @@
-def main():
-    return True
+# Constants
+question_file = "questions.txt"
+
 
 def get_question(question_file):
     question_list = []
@@ -11,13 +12,20 @@ def get_question(question_file):
             question_list.append((question_text, letter))
     return question_list
 
+
 def ask_question(question):
     print(question[0])
     return input("Enter your answer (a/b/c): ")
 
+
+def calculate_score(response_txt):
+    pass
+
+
+def main():
+    return True
+
+
 if __name__ == "__main__":
     main()
-    #answer options to csv and questions from question.text
-
-def calulate_score(response_txt):
-    
+    # answer options to csv and questions from question.text
