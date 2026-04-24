@@ -4,6 +4,8 @@ question_file = "questions.txt"
 # Imports
 import tkinter as tk
 
+root = tk.Tk()
+
 def get_question(question_file):
     question_list = []
     with open(question_file, "r") as fh:
@@ -22,7 +24,6 @@ def ask_question(question):
 
 def calculate_score(response_txt):
     pass
-
 
 def main():
     get_question(question_file)
