@@ -1,7 +1,9 @@
 # Constants
 question_file = "questions.txt"
+answer_options = "answer_options.csv"
 
 # Import .py file with the buttons
+import display
 
 def get_question(question_file):
     question_list = []
@@ -18,8 +20,11 @@ def ask_question(question):
     print(question[0])
     return input("Select your answer: ")
 
-def calculate_score(response_txt):
-    pass
+# def calculate_score(response_txt):
+#    pass
+
+def save_answers():
+    answer_list = []
 
 def main():
     get_question(question_file)
