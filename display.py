@@ -91,13 +91,7 @@ class Display:
         save_answers("B")
 
     def connect_keys(self):
-        self.turtle_screen.onkey(
-            self.move_left, "Left"
-        )  # Press Left arrow to move left
-        self.turtle_screen.onkey(
-            self.move_right, "Right"
-        )  # Press Right arrow to move right
-        self.turtle_screen.onkey(
-            self.move_forward, "Up"
-        )  # Press Up arrow to move forward
+        self.turtle_screen.onkey(self.move_left, "Left")
+        self.turtle_screen.onkey(self.move_right, "Right")
+        self.turtle_screen.onkey(self.move_forward, "Up")
         self.turtle_screen.listen()
