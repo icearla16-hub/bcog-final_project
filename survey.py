@@ -23,7 +23,7 @@ def ask_question(question_list):
         return input("Select your answer: ")
 
 def save_answers(answer):
-    with open(answer_file, "a") as file:
+    with open(answer_file, "w") as file:
         file.write(f"{answer}\n")
 
 def main():
