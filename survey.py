@@ -1,7 +1,7 @@
 # Constants
 question_file = "questions.txt"
 answer_options = "answer_options.csv"
-answer_file = "answers.txt"
+answer_file = "responses.txt"
 
 # Import .py file with the buttons
 import display
