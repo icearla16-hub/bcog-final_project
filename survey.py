@@ -1,6 +1,7 @@
 # Constants
 question_file = "questions.txt"
 answer_options = "answer_options.csv"
+answer_file = "answers.txt"
 
 # Import .py file with the buttons
 import display
@@ -22,8 +23,8 @@ def ask_question(question_list):
         return input("Select your answer: ")
 
 def save_answers(answer):
-    answer_list = []
-    answer_list.append(answer)
+    with open(answer_file, "w") as file:
+        file.write(answer)
 
 def main():
     get_question(question_file)
