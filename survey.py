@@ -13,7 +13,7 @@ def get_question(question_file):
         for question in fh:
             question = question.strip()
             if question and not question.startswith("###"):
-                question_list.append((question))
+                question_list.append(question)
     return question_list
 
 
