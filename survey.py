@@ -19,13 +19,13 @@ def get_question(question_file):
 
 
 def ask_question(question_list):
-    for i in range(question_list):
-        print(question_list[0])
+    for i in range(len(question_list)):
+        print(question_list[i])
         return input("Select your answer: ")
 
 
 def save_answers(answer):
-    with open(answer_file, "w") as file:
+    with open(answer_file, "a") as file:
         file.write(f"{answer}\n")
 
 
