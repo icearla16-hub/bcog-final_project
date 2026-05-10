@@ -6,6 +6,7 @@ answer_file = "responses.txt"
 # Import .py file with the buttons
 import display
 
+
 def get_question(question_file):
     question_list = []
     with open(question_file, "r") as fh:
@@ -22,9 +23,11 @@ def ask_question(question_list):
         print(question_list[0])
         return input("Select your answer: ")
 
+
 def save_answers(answer):
     with open(answer_file, "w") as file:
         file.write(f"{answer}\n")
+
 
 def main():
     question_list = get_question(question_file)
