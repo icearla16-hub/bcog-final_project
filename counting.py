@@ -13,18 +13,20 @@ def count(file_path):
 def specific_personality(counts):
     a,b,c = counts['a'], counts['b'], counts['c']
     if a > b and a > c:
-        return 'A personality classification find from text'
+        return 'You are the A personality. This personality means that despite the possibility of being harmed, you always choose to help.'
     elif b > a and b > c:
-        return 'b personality classification find from text'
+        return 'You are the B personality. This personality means that you are a practical person who chooses to help when it does not hurt you, but you will not go out of your way to help.'
     else:
-        return 'c personality classification find from text'
+        return 'You are the C personality. This personality means that you are a focused person, reliant on only your skills to reach your goals.'
 
 def ties(counts):
     a,b,c = counts['a'], counts['b'], counts['c']
     max_value = max(a,b,c)
     winners = [letter for letter, count in counts.items() if count == max_value]
     if len(winners) > 1:
-        tie = {'a': 'a type thing in notes', 'b': 'b type thing in notes', 'c': 'c type thing in notes'}
+        tie = {'a': 'You are the A personality. This personality means that despite the possibility of being harmed, you always choose to help.',
+            'b': 'You are the B personality. This personality means that you are a practical person who chooses to help when it does not hurt you, but you will not go out of your way to help',
+              'c': 'You are the C personality. This personality means that you are a focused person, reliant on only your skills to reach your goals.'}
         results_for_tie = [tie[i] for i in winners]
         return f'Based on the choices you have made in your path, we believe you are a mix of two personalities. We believe you are both {results_for_tie[0]} and {results_for_tie[1]}! We hope these test results let you understand more about who you are and the decisions you tend to make. (maybe add more text here)'
     return None
