@@ -1,4 +1,4 @@
-answer_file = 'responses.txt'
+answer_file = 'response.txt'
 
 def count(file_path):
     counts = {'a':0, 'b':0, 'c':0}
