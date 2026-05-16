@@ -1,6 +1,13 @@
 import tkinter as tk
 import turtle
-from survey import save_answers
+from survey import get_question, ask_question, save_answers
+
+question_file = "questions.txt"
+answer_options = "answer_options.csv"
+answer_file = "responses.txt"
+
+
+question_list = get_question(question_file)
 
 
 class Display:
@@ -48,6 +55,16 @@ class Display:
             command=self.move_right,
         )
         self.c.grid(row=0, column=2)
+
+    def create_text_frame(self):
+        self.text_frame_height = 100
+        self.text_frame = tk.Frame(
+            self.root,
+            width=self.screen_size[0],
+            height=self.text_frame_height,
+            bg="blue",
+        )
+        self.interface_frame.grid(row=2, column=0)
 
     def create_turtle_frame(self):
         self.turtle_frame_height = self.screen_size[1] - self.interface_frame_height
