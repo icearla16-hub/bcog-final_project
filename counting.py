@@ -35,7 +35,6 @@ def results():
     data = count(answer_file)
     checking_if_tie = ties(data)
     if checking_if_tie:
-        #personality = checking_if_tie
         print(checking_if_tie)
     else:
         personality = specific_personality(data)
