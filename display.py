@@ -67,7 +67,7 @@ class Display:
             text="Here is a runner. Click the ‘Go!’ button to make them run.",
             font="Helvetica 12 bold",
         )
-        self.text_canvas.pack()
+        self.text_canvas.grid(row=2, column=0)
 
     def create_turtle_frame(self):
         self.turtle_frame_height = 0.75 * self.screen_size[1]
