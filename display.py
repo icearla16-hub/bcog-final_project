@@ -60,7 +60,7 @@ class Display:
             height=(0.25 * self.screen_size[1]),
             bg="blue",
         )
-        self.interface_frame.grid(row=2, column=0)
+        self.text_frame.grid(row=2, column=0)
 
     def create_turtle_frame(self):
         self.turtle_frame_height = 0.75 * self.screen_size[1]
