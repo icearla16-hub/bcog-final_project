@@ -24,22 +24,24 @@ def ties(counts):
     max_value = max(a,b,c)
     winners = [letter for letter, count in counts.items() if count == max_value]
     if len(winners) > 1:
-        tie = {'a': 'You are the A personality. This personality means that despite the possibility of being harmed, you always choose to help.',
-            'b': 'You are the B personality. This personality means that you are a practical person who chooses to help when it does not hurt you, but you will not go out of your way to help',
-              'c': 'You are the C personality. This personality means that you are a focused person, reliant on only your skills to reach your goals.'}
+        tie = {'a': 'A personality, this personality means that despite the possibility of being harmed, you always choose to help,',
+            'b': 'B personality, this personality means that you are a practical person who chooses to help when it does not hurt you, but you will not go out of your way to help,',
+              'c': 'C personality, this personality means that you are a focused person, reliant on only your skills to reach your goals,'}
         results_for_tie = [tie[i] for i in winners]
-        return f'Based on the choices you have made in your path, we believe you are a mix of two personalities. We believe you are both {results_for_tie[0]} and {results_for_tie[1]}! We hope these test results let you understand more about who you are and the decisions you tend to make. (maybe add more text here)'
+        return f'Based on the choices you have made in your path, we believe you are a mix of two personalities. We believe you are both {results_for_tie[0]} and {results_for_tie[1]}! We hope these test results let you understand more about who you are and the decisions you tend to make. Thanks for playing our game!'
     return None
 
 def results():
     data = count(answer_file)
     checking_if_tie = ties(data)
     if checking_if_tie:
-        personality = checking_if_tie
+        #personality = checking_if_tie
+        print(checking_if_tie)
     else:
         personality = specific_personality(data)
-    print(f'Based on the choices you have made you align most similar to {personality}!')
-    print('This means you tend to make chocies to that blah balh finish!')
+        print(f'Based on the choices you have made you align most similar to:')
+        print(personality)
+        print('We hope these test results let you understand more about who you are and the decisions you tend to make. Thanks for playing our game!')
 
 
 if __name__ == '__main__':
