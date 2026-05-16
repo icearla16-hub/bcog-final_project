@@ -15,6 +15,7 @@ class Display:
         self.root = tk.Tk()
         self.init_window()
         self.create_interface_frame()
+        self.create_text_canvas()
         self.create_turtle_frame()
         self.create_turtle_canvas()
 
