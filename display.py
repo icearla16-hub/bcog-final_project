@@ -24,11 +24,8 @@ class Display:
         self.root.geometry(f"{self.screen_size[0]}x{self.screen_size[1]}")
 
     def create_interface_frame(self):
-        self.interface_frame_height = 100
         self.interface_frame = tk.Frame(
-            self.root,
-            width=self.screen_size[0],
-            height=self.interface_frame_height,
+            self.root, width=self.screen_size[0], height=(0.25 * self.screen_size[1])
         )
         self.interface_frame.grid(row=1, column=0)
 
@@ -57,17 +54,16 @@ class Display:
         self.c.grid(row=0, column=2)
 
     def create_text_frame(self):
-        self.text_frame_height = 100
         self.text_frame = tk.Frame(
             self.root,
             width=self.screen_size[0],
-            height=self.text_frame_height,
+            height=(0.25 * self.screen_size[1]),
             bg="blue",
         )
         self.interface_frame.grid(row=2, column=0)
 
     def create_turtle_frame(self):
-        self.turtle_frame_height = self.screen_size[1] - self.interface_frame_height
+        self.turtle_frame_height = 0.75 * self.screen_size[1]
         self.turtle_frame_width = self.screen_size[0]
         self.turtle_frame = tk.Frame(
             self.root,
