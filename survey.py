@@ -6,47 +6,51 @@ answer_options_file = (
 response_file = "responses.txt"  # A response is the answer option the user chooses.
 
 
+# opening the question file and creating a list of the questions from questions.txt
 def get_question(question_file):
-    question_list = []
     with open(question_file, "r") as fh:
         for line in fh:
-            question = line.strip()
-            question_list.append(question)
+            question_list = [line.strip() for line in fh]
     return question_list
 
 
+# opening the .csv file with the answer options, and saving the options
 def get_answer_options(answer_options_file):
-    answer_options_list = []
     with open(answer_options_file, "r") as fh:
-        for line in fh:
-            answer_options = line.strip("\n").split(",,")
-            answer_options_list.append(answer_options)
+        answer_options_list = [line.strip("\n").split(",,") for line in fh]
     return answer_options_list
 
 
-def ask_question(question_list, answer_options_list, num: int):
-    for i, question in enumerate(question_list):
-        print(question_list[num])
-        print(answer_options_list[num])
+def ask_question(question_list, answer_options_list):
+    for i in range(len(question_list)):
+        print(question_list[i])
+        print(answer_options_list[i])
         response = input(str("Select your answer: "))
-        num += 1
-        if response not in ["a", "b", "c"]:
-            raise ValueError("Please enter 'a', 'b', or 'c'.")
+        if response not in ["A", "B", "C"]:
+            raise ValueError("Please enter 'A', 'B', or 'C'.")
         return response
 
 
+# saving the answers to responses.txt
 def save_answers(response):
     with open(response_file, "a") as file:
         file.write(f"{response}\n")
 
 
+# putting it all together
 def main():
-    for i in range(7):
-        num = 2
+    for i in range(len(question_file)):
         question_list = get_question(question_file)
         answer_options_list = get_answer_options(answer_options_file)
-        ask_question(question_list, answer_options_list, num)
-        num = 4
+        for i in range(
+            len(question_list)
+        ):  # printing one question + row of answer choices at a time
+            print(question_list[i])
+            print(answer_options_list[i])
+            response = input(str("Select your answer: "))
+            if response not in ["A", "B", "C"]:
+                raise ValueError("Please enter 'A', 'B', or 'C'.")
+        return response
 
 
 if __name__ == "__main__":
