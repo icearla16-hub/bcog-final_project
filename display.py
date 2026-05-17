@@ -1,6 +1,7 @@
 import tkinter as tk
 import turtle
 from survey import *
+from counting import results
 
 question_file = "questions.txt"
 answer_options = "answer_options.csv"
@@ -12,6 +13,7 @@ answer_options_list = get_answer_options(answer_options_file)
 
 class Display:
     def __init__(self):
+        self.current_question = 0
         self.root = tk.Tk()
         self.init_window()
         self.create_interface_frame()
@@ -31,9 +33,10 @@ class Display:
         self.interface_frame.grid(row=1, column=0)
 
     def create_buttons(self):
+
         self.a = tk.Button(
             self.interface_frame,
-            text="Option A",
+            text=answer_options_list[self.current_question][0],
             font="Garamond 12",
             command=self.move_left,
         )
@@ -41,7 +44,7 @@ class Display:
 
         self.b = tk.Button(
             self.interface_frame,
-            text="Option B",
+            text=answer_options_list[self.current_question][1],
             font="Garamond 12",
             command=self.move_forward,
         )
@@ -49,7 +52,7 @@ class Display:
 
         self.c = tk.Button(
             self.interface_frame,
-            text="Option C",
+            text=answer_options_list[self.current_question][2],
             font="Garamond 12",
             command=self.move_right,
         )
@@ -60,7 +63,7 @@ class Display:
             text=str(ask_question(question_list, answer_options_list)),
             font="Garamond 12",
         )
-        self.text.grid(row=2, column=0)
+        self.text.grid(row=0, column=0)
 
     def create_turtle_frame(self):
         self.turtle_frame_height = 0.75 * self.screen_size[1]
@@ -87,21 +90,37 @@ class Display:
         self.t.penup()
         self.t.setpos(0, -0.4 * (self.turtle_frame_height))
 
+    def next_question(self):
+        self.current_question += 1
+        if self.current_question < len(question_list):
+            self.text.config(text = question_list[self.current_question])
+            self.a.config(text = answer_options_list[self.current_question][0])
+            self.b.config(text = answer_options_list[self.current_question][1])
+            self.c.config(text = answer_options_list[self.current_question][2])
+        else:
+            self.a.grid_remove()
+            self.b.grid_remove()
+            self.c.grid_remove()
+            self.text.config(text = results())
+
     def move_left(self):
         self.t.left(90)
         self.t.forward(20)
         self.t.right(90)
         save_answers("A")
+        self.next_question()
 
     def move_right(self):
         self.t.right(90)
         self.t.forward(20)
         self.t.left(90)
         save_answers("C")
+        self.next_question()
 
     def move_forward(self):
         self.t.forward(20)
         save_answers("B")
+        self.next_question()
 
     def connect_keys(self):
         self.turtle_screen.onkey(self.move_left, "Left")

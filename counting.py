@@ -41,15 +41,10 @@ def results():
     data = count(response_file)
     checking_if_tie = ties(data)
     if checking_if_tie:
-        print(checking_if_tie)
+        return checking_if_tie
     else:
         personality = specific_personality(data)
-        print(f"Based on the choices you have made you align most similar to:")
-        print(personality)
-        print(
-            "We hope these test results let you understand more about who you are and the decisions you tend to make. Thanks for playing our game!"
-        )
-
+        return f"Based on the choices you have made you align most similar to: {personality} We hope these test results let you understand more about who you are and the decisions you tend to make. Thanks for playing our game!"
 
 if __name__ == "__main__":
-    results()
+    print(results())
