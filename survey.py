@@ -20,7 +20,7 @@ def get_question(question_file):
 def ask_question(question_list):
     for i in range(len(question_list)):
         print(question_list[i])
-        return input("Select your answer: ")
+        return input(str("Select your answer: "))
 
 
 def save_answers(answer):
@@ -34,7 +34,5 @@ def main():
 
 
 if __name__ == "__main__":
-    question_list = get_question(question_file)
-    ask_question(question_list)
     main()
     # answer options to csv and questions from question.text
