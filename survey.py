@@ -9,8 +9,7 @@ response_file = "responses.txt"  # A response is the answer option the user choo
 # opening the question file and creating a list of the questions from questions.txt
 def get_question(question_file):
     with open(question_file, "r") as fh:
-        for line in fh:
-            question_list = [line.strip() for line in fh]
+        question_list = [line.strip() for line in fh]
     return question_list
 
 
