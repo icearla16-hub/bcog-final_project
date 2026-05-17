@@ -10,8 +10,8 @@ import display
 def get_question(question_file):
     question_list = []
     with open(question_file, "r") as fh:
-        for question in fh:
-            question = question.strip()
+        for line in fh:
+            question = line.strip()
             if question and not question.startswith("###"):
                 question_list.append(question)
     return question_list
