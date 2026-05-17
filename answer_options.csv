@@ -1,27 +1,7 @@
-a shield,a
-a compass,b
-a knife,c
-
-you can use your knife to stop their bleeding and help the wolf recover,a
-you can use your compass to tell them the way to help and leave,b
-you leave the wolf alone because it might attack you especially because it is injured,c
-
-you give up your knife knowing that would be your choice of a weapon in the future,a
-you offer your shield and take their food knowing that the chances of you using the shield are anyway,b
-you take their food and run knowing this is your only chance for sustenance and not facing consequences,c
-
-you can help them and delay your travels,a
-you assist them with patching up and leave,b
-you leave knowing the jewels are vital to your debts and dreams,c
-
-Congratulations you have already earned some of your jewels back as this rabbit has gained access to them before,a
-Congratulations though you haven't earned any of your jewels back you have earned another tool,b
-Congratulations you have sped up the time towards your goals but haven't earned anything special from your choice,c
-
-The town council member offers a guide through the forest but you have to take it with other animals so you know they will slow you down even though it will help them,a
-The town council member says you can take the guide alone but you will have to give up some food for the rest of the people,b
-The town council member says you can take your own version of the guide with the compass you have and arrive faster at your jewels,c
-
-You give them to the people of the village they are rightfully owed to,a
-You keep half of the jewels and share the other half,b
-You keep the jewels for yourself,c
+A: a shield,B: a compass,C: a knife
+A: you can use your knife to stop their bleeding and help the wolf recover,B: you can use your compass to tell them the way to help and leave,C: you leave the wolf alone because it might attack you especially because it is injured
+A: you give up your knife knowing that would be your choice of a weapon in the future,B: you offer your shield and take their food knowing that the chances of you using the shield are anyway,C: you take their food and run knowing this is your only chance for sustenance and not facing consequences
+A: you can help them and delay your travels,B: you assist them with patching up and leave,C: you leave knowing the jewels are vital to your debts and dreams
+A: Congratulations you have already earned some of your jewels back as this rabbit has gained access to them before,B: Congratulations though you haven't earned any of your jewels back you have earned another tool,C: Congratulations you have sped up the time towards your goals but haven't earned anything special from your choice
+A: The town council member offers a guide through the forest but you have to take it with other animals so you know they will slow you down even though it will help them,B: The town council member says you can take the guide alone but you will have to give up some food for the rest of the people,C: The town council member says you can take your own version of the guide with the compass you have and arrive faster at your jewels
+A: You give them to the people of the village they are rightfully owed to,B: You keep half of the jewels and share the other half,C: You keep the jewels for yourself

@@ -1,6 +1,8 @@
 # Constants
 question_file = "questions.txt"
-answer_options_file = "answer_options.csv"
+answer_options_file = (
+    "answer_options.csv"  # Three answer options are given per question.
+)
 response_file = "responses.txt"  # A response is the answer option the user chooses.
 
 
@@ -15,16 +17,17 @@ def get_question(question_file):
 def get_answer_options(answer_options_file):
     with open(answer_options_file, "r") as fh:
         for line in fh:
-            answer_option = line.strip("\n").split(",").pop(0)
-            answer_options_list = [answer_option for line in fh]
+            answer_options = line.strip("\n").split(",")
+            answer_options_list = [answer_options for line in fh]
+    print(answer_options_list)
     return answer_options_list
 
 
 def ask_question(question_list, answer_options_list):
     for question in question_list:
         print(question)
-    for answer_option in answer_options_list:
-        print(answer_option)
+    for answer_options in answer_options_list:
+        print(answer_options)
         response = input(str("Select your answer: "))
         return response
 
