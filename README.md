@@ -8,7 +8,6 @@ _—as a bunny. It's casually chewing on a piece of grass, looking so unbothered
 You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free—the jewels are enough to pay your debts and establish the life of your dreams. Get caught, however, and the rest of your days will become a nightmare. With only your wits to guide you, what will your fate be?
 
 ## How do you run our project?
-
 Run the main.py function using uv run python main.py.
 
 ## What is our project about?
