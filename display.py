@@ -61,12 +61,7 @@ class Display:
             height=(0.25 * self.screen_size[1]),
             bg="blue",
         )
-        self.text_canvas.create_text(
-            0,
-            0,
-            text="Here is a runner. Click the ‘Go!’ button to make them run.",
-            font="Helvetica 12 bold",
-        )
+        self.text_canvas.create_text(0, 0, text=ask_question(question_list))
         self.text_canvas.grid(row=2, column=0)
 
     def create_turtle_frame(self):

@@ -17,18 +17,19 @@ def get_question(question_file):
 def get_answer_options(answer_options_file):
     with open(answer_options_file, "r") as fh:
         for line in fh:
-            answer_options = line.strip("\n").split(",")
+            answer_options = line.strip("\n").split(",,")
             answer_options_list = [answer_options for line in fh]
     print(answer_options_list)
     return answer_options_list
 
 
 def ask_question(question_list, answer_options_list):
-    for question in question_list:
-        print(question)
-    for answer_options in answer_options_list:
-        print(answer_options)
+    for i in range(len(question_list)):
+        print(question_list[i])
+        print(answer_options_list[i])
         response = input(str("Select your answer: "))
+        if response not in ["a", "b", "c"]:
+            raise ValueError("Please enter 'a', 'b', or 'c'.")
         return response
 
 
@@ -38,9 +39,10 @@ def save_answers(response):
 
 
 def main():
-    question_list = get_question(question_file)
-    answer_options_list = get_answer_options(answer_options_file)
-    ask_question(question_list, answer_options_list)
+    for i in range(len(question_list)):
+        question_list = get_question(question_file)
+        answer_options_list = get_answer_options(answer_options_file)
+        ask_question(question_list, answer_options_list)
 
 
 if __name__ == "__main__":
