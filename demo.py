@@ -1,5 +1,6 @@
 from display import Display
 from counting import results
+from survey import main
 
 
 def main():

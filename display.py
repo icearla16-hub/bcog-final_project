@@ -1,13 +1,10 @@
 import tkinter as tk
 import turtle
-from survey import get_question, ask_question, save_answers
+from survey import *
 
 question_file = "questions.txt"
 answer_options = "answer_options.csv"
 answer_file = "responses.txt"
-
-
-question_list = get_question(question_file)
 
 
 class Display:
@@ -15,12 +12,11 @@ class Display:
         self.root = tk.Tk()
         self.init_window()
         self.create_interface_frame()
-        self.create_text_canvas()
         self.create_turtle_frame()
         self.create_turtle_canvas()
 
     def init_window(self):
-        self.root.title("Name")
+        self.root.title("The Adventures of the Turtle")
         self.screen_size = (800, 600)
         self.root.geometry(f"{self.screen_size[0]}x{self.screen_size[1]}")
 
@@ -54,15 +50,8 @@ class Display:
         )
         self.c.grid(row=0, column=2)
 
-    def create_text_canvas(self):
-        self.text_canvas = tk.Canvas(
-            self.interface_frame,
-            width=self.screen_size[0],
-            height=(0.25 * self.screen_size[1]),
-            bg="blue",
-        )
-        self.text_canvas.create_text(0, 0, text=ask_question(question_list))
-        self.text_canvas.grid(row=2, column=0)
+        self.text = tk.Label(self.interface_frame, text="hello", font="Garamond 12")
+        self.text.grid(row=2, column=0)
 
     def create_turtle_frame(self):
         self.turtle_frame_height = 0.75 * self.screen_size[1]
