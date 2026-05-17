@@ -7,6 +7,9 @@ _—as a bunny. It's casually chewing on a piece of grass, looking so unbothered
 
 You're on the run after stealing the local dictatorship's crown jewels. As the guards close in behind you, there's only one thing standing between you and freedom: the infamous forest surrounding the kingdom. Make it through, and you're home free—the jewels are enough to pay your debts and establish the life of your dreams. Get caught, however, and the rest of your days will become a nightmare. With only your wits to guide you, what will your fate be?
 
+## How do you run our project?
+Run the main.py function using uv run python main.py.
+
 ## What is our project about?
 Our project is a choose-your-own-adventure personality test. Users face situations within the storyline, and their decisions inform the path they take through the forest, culminating in a unique ending that reveals something about their personality.
 
@@ -22,7 +25,6 @@ Functions will cover three major domains: making the Tkinter display, controllin
 - `display.py` - The display
 
 ### 1. Making the Tkinter display
-> NOTE: Lab 7 may be a helpful reference
 
 Establish a class `Display` with the following methods:
 - \_\_init\_\_(): Creates a Tkinter window. Calls the following methods.
@@ -65,19 +67,3 @@ This will require the following functions:
 ## Testing
 
 Throughout the game, the user should be able to see a turtle, that is appearing to go through a forest. As the turtle reaches certain parts of the forest, it should be stopped, and given the choice between three choices, and should be able to smootly pick between the three choices. This should happen eight times throughout the game, and at the very end, the user should be shown a conclusion of which personality their choices line up with depending on their choices throughout the game.
-
-## Group Members + Github Usernames
-
-Akhila: icearla16-hub  
-Nora: noralz2  
-Andrea: andrealo2432
-
-## How our work is going to be split
-
-  Each person will complete three functions. We will be working on it together in person.
-  - Nora: The turtle, and how it is able to move around, incorporating user input.
-  - Akhila: Based on the user input (ie. which object they choose), they turn a specific direction; In addition, the question asked for the person to decide which object they would like to choose (a text file).
-  - Andrea: Visuals, math/tally of each of the chosen objects
-
-#### How we are communicating: 
-We have a group chat with each other to communicate with each other, and we would do weekly checkups.
