@@ -9,17 +9,13 @@ response_file = "responses.txt"  # A response is the answer option the user choo
 def get_question(question_file):
     with open(question_file, "r") as fh:
         for line in fh:
-            question = line.strip()
-            question_list = [question for line in fh]
+            question_list = [line.strip() for line in fh]
     return question_list
 
 
 def get_answer_options(answer_options_file):
     with open(answer_options_file, "r") as fh:
-        for line in fh:
-            answer_options = line.strip("\n").split(",,")
-            answer_options_list = [answer_options for line in fh]
-    print(answer_options_list)
+            answer_options_list = [line.strip("\n").split(",,")for line in fh]
     return answer_options_list
 
 
@@ -28,8 +24,8 @@ def ask_question(question_list, answer_options_list):
         print(question_list[i])
         print(answer_options_list[i])
         response = input(str("Select your answer: "))
-        if response not in ["a", "b", "c"]:
-            raise ValueError("Please enter 'a', 'b', or 'c'.")
+        if response not in ["A", "B", "C"]:
+            raise ValueError("Please enter 'A', 'B', or 'C'.")
         return response
 
 
@@ -39,10 +35,17 @@ def save_answers(response):
 
 
 def main():
-    for i in range(len(question_list)):
+    for i in range (len(question_file)):
         question_list = get_question(question_file)
         answer_options_list = get_answer_options(answer_options_file)
-        ask_question(question_list, answer_options_list)
+        for i in range(len(question_list)):
+            print(question_list[i])
+            print(answer_options_list[i])
+            response = input(str("Select your answer: "))
+            if response not in ["A", "B", "C"]:
+                raise ValueError("Please enter 'A', 'B', or 'C'.")
+        return response
+    save_answers(response)
 
 
 if __name__ == "__main__":
