@@ -9,7 +9,7 @@ You're on the run after stealing the local dictatorship's crown jewels. As the g
 
 ## How do you run our project?
 
-run the main.py function using uv run python main.py
+Run the main.py function using uv run python main.py.
 
 ## What is our project about?
 Our project is a choose-your-own-adventure personality test. Users face situations within the storyline, and their decisions inform the path they take through the forest, culminating in a unique ending that reveals something about their personality.
