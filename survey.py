@@ -17,11 +17,14 @@ def get_answer_options(answer_options_file):
         for line in fh:
             answer_option = line.strip("\n").split(",").pop(0)
             answer_options_list = [answer_option for line in fh]
+    return answer_options_list
 
 
-def ask_question(question_list):
+def ask_question(question_list, answer_options_list):
     for question in question_list:
         print(question)
+    for answer_option in answer_options_list:
+        print(answer_option)
         response = input(str("Select your answer: "))
         return response
 
@@ -33,8 +36,8 @@ def save_answers(response):
 
 def main():
     question_list = get_question(question_file)
-    get_answer_options(answer_options_file)
-    ask_question(question_list)
+    answer_options_list = get_answer_options(answer_options_file)
+    ask_question(question_list, answer_options_list)
 
 
 if __name__ == "__main__":
