@@ -18,7 +18,7 @@ def get_answer_options(answer_options_file):
     answer_options_list = []
     with open(answer_options_file, "r") as fh:
         for line in fh:
-            answer_option = line.strip("\n").split(",")
+            answer_option = line.split(",").pop()
             answer_options_list.append(answer_option)
     print(answer_options_list)
 
