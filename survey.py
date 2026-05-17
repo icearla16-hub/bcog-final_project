@@ -1,6 +1,6 @@
 # Constants
 question_file = "questions.txt"
-answer_options = "answer_options.csv"
+answer_options_file = "answer_options.csv"
 answer_file = "responses.txt"
 
 # Import .py file with the buttons
@@ -15,6 +15,14 @@ def get_question(question_file):
             if question and not question.startswith("###"):
                 question_list.append(question)
     return question_list
+
+
+def get_answer_options(answer_options_file):
+    with open(answer_options_file, "r") as fh:
+        for line in fh:
+            answer_option = line.strip("\n").split(",")
+            answer_options_list = [answer_option for line in fh]
+        print(answer_options_list)
 
 
 def ask_question(question_list):
