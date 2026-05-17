@@ -5,22 +5,18 @@ response_file = "responses.txt"  # A response is the answer option the user choo
 
 
 def get_question(question_file):
-    question_list = []
     with open(question_file, "r") as fh:
         for line in fh:
             question = line.strip()
-            if question and not question.startswith("###"):
-                question_list.append(question)
+            question_list = [question for line in fh]
     return question_list
 
 
 def get_answer_options(answer_options_file):
-    answer_options_list = []
     with open(answer_options_file, "r") as fh:
         for line in fh:
             answer_option = line.strip("\n").split(",").pop(0)
-            answer_options_list.append(answer_option)
-    print(answer_options_list)
+            answer_options_list = [answer_option for line in fh]
 
 
 def ask_question(question_list):
