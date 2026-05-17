@@ -1,10 +1,7 @@
 # Constants
 question_file = "questions.txt"
 answer_options_file = "answer_options.csv"
-answer_file = "responses.txt"
-
-# Import .py file with the buttons
-import display
+response_file = "responses.txt"  # A response is the answer option the user chooses.
 
 
 def get_question(question_file):
@@ -26,21 +23,22 @@ def get_answer_options(answer_options_file):
 
 
 def ask_question(question_list):
-    for i in range(len(question_list)):
-        print(question_list[i])
-        return input(str("Select your answer: "))
+    for question in question_list:
+        print(question)
+        response = input(str("Select your answer: "))
+        return response
 
 
-def save_answers(answer):
-    with open(answer_file, "a") as file:
-        file.write(f"{answer}\n")
+def save_answers(response):
+    with open(response_file, "a") as file:
+        file.write(f"{response}\n")
 
 
 def main():
     question_list = get_question(question_file)
+    get_answer_options(answer_options_file)
     ask_question(question_list)
 
 
 if __name__ == "__main__":
     main()
-    # answer options to csv and questions from question.text
