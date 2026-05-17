@@ -6,6 +6,9 @@ question_file = "questions.txt"
 answer_options = "answer_options.csv"
 answer_file = "responses.txt"
 
+question_list = get_question(question_file)
+answer_options_list = get_answer_options(answer_options_file)
+
 
 class Display:
     def __init__(self):
@@ -14,6 +17,7 @@ class Display:
         self.create_interface_frame()
         self.create_turtle_frame()
         self.create_turtle_canvas()
+        self.create_buttons()
 
     def init_window(self):
         self.root.title("The Adventures of the Turtle")
@@ -26,6 +30,7 @@ class Display:
         )
         self.interface_frame.grid(row=1, column=0)
 
+    def create_buttons(self):
         self.a = tk.Button(
             self.interface_frame,
             text="Option A",
@@ -50,7 +55,11 @@ class Display:
         )
         self.c.grid(row=0, column=2)
 
-        self.text = tk.Label(self.interface_frame, text="hello", font="Garamond 12")
+        self.text = tk.Label(
+            self.interface_frame,
+            text=str(ask_question(question_list, answer_options_list)),
+            font="Garamond 12",
+        )
         self.text.grid(row=2, column=0)
 
     def create_turtle_frame(self):
