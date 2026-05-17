@@ -9,8 +9,7 @@ response_file = "responses.txt"  # A response is the answer option the user choo
 # opening the question file and creating a list of the questions from questions.txt
 def get_question(question_file):
     with open(question_file, "r") as fh:
-        for line in fh:
-            question_list = [line.strip() for line in fh]
+        question_list = [line.strip() for line in fh]
     return question_list
 
 
@@ -48,7 +47,7 @@ def main():
             print(question_list[i])
             print(answer_options_list[i])
             response = input(str("Select your answer: "))
-            if response not in ["A", "a", "B", "b", "C", "c"]:
+            if response not in ["A", "B", "C"]:
                 raise ValueError("Please enter 'A', 'B', or 'C'.")
         return response
 
